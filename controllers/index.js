@@ -10,6 +10,10 @@ module.exports = {
 
     marsRoverImages: (req, res) => {
         res.render("marsRoverImages")
+    },
+
+    apod: (req, res) => {
+        res.render('apod')
     }
 
 

@@ -10,4 +10,7 @@ router.get('/', indexController.home)
 router.get('/mars-images', indexController.marsRoverImages)
 
 
+router.get('/apod', indexController.apod)
+
+
 module.exports = router

@@ -8,6 +8,7 @@ body {
   display: Flex;
   flex-flow: column wrap;
   height: 100%;
+  width: 100%;
   background-color: rgb(13, 13, 13);
   overflow-y: scroll;
   overflow-x: hidden;
@@ -75,11 +76,33 @@ h2 {
   right: 0;
 }
 
+#saturn-img-container a {
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
 
 #saturn-img {
   height: auto;
+  width: 100%;
   max-width: 300px;
+  transition: 3s ease-in-out;
+  -webkit-transition: 3s ease-in-out;
 }
+
+#saturn-img:hover {
+  cursor: pointer;
+  width: 50%;
+}
+
+
+
+
+#jupiter-uranus-container img {
+  margin: 15px;
+  width: 50px;
+}
+
 
 #left-links a {
   padding: 40px 0px;
@@ -139,6 +162,38 @@ h2 {
   display: flex;
   flex-flow: row wrap;
 }
+
+#image-gallery-container {
+  display: flex;
+  justify-content: center;
+  /* width: 100vw;
+  max-height: 600px; */
+  overflow: hidden;
+}
+
+#image-gallery {
+  width: 80vw;
+  height: auto;
+  overflow-x: scroll;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#image-gallery>* {
+  padding: 0px 20px;
+}
+
+#image-gallery img {
+  height: auto;
+  max-height: 500px;
+  width: 100%;
+}
+
+
 
 footer {
   color: white;

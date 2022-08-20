@@ -3,10 +3,11 @@
 
 <head>
   <title>
-    <%= title %>
+    Home
   </title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <script src="https://kit.fontawesome.com/d4fe87d88c.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="../javascripts/index.js"></script>
 </head>
 
@@ -18,19 +19,29 @@
 
     <div id="links-container">
       <div id="left-links">
-        <a href="/marsRover">Mars rover images</a>
+        <a href="/apod">Astronomy picture of the day</a>
         <a href="/neoWs">Close asteroids</a>
         <a href="/marsWeather">Weather in mars</a>
       </div>
 
       <div>
-        <img id="saturn-img" src="../images/saturnPNG.png" alt="">
+        <img id="saturn-img" src="../images/saturnPNG.png" alt="saturn-img">
+        <div id="jupiter-uranus-container">
+          <img id="uranus" src="../images/uranus.png" alt="uranus-image">
+          <img id="jupiter" src="../images/Jupiter.png" alt="jupiter-image">
+        </div>
       </div>
 
       <div id="right-links">
         <a href="/exploreMoon">Explore the moon</a>
         <a href="/images&videos">Image and video gallery</a>
         <a href="/dailyEarth">Daily earth</a>
+      </div>
+    </div>
+
+    <h4>Images from Mars (from all mars)</h4>
+    <div id="image-gallery-container">
+      <div id="image-gallery">
       </div>
     </div>
 
