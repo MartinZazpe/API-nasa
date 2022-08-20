@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* padding: 50px; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: Flex;
+  flex-flow: column wrap;
+  height: 100%;
+  background-color: rgb(13, 13, 13);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h2,
+h4 {
+  color: white;
+  text-align: center
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+
+#main-section {
+  display: flex;
+  flex-flow: row wrap;
+  max-height: 900px;
+  position: relative;
+}
+
+#links-container {
+  display: Flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+#left-links {
+  margin: none;
+  max-width: 20vw;
+  height: inherit;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  z-index: 2;
+  /* position: absolute; */
+  top: 30%;
+  left: 0;
+  text-align: end;
+}
+
+#right-links {
+  margin: none;
+  max-width: 20vw;
+  height: inherit;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  text-align: start;
+  z-index: 2;
+  /* position: absolute; */
+  top: 30%;
+  right: 0;
+}
+
+
+#saturn-img {
+  height: auto;
+  max-width: 300px;
+}
+
+#left-links a {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: end;
+  border-top: 1px solid white;
+  width: 100%;
+}
+
+
+#right-links a {
+  padding: 40px 0px;
+  display: flex;
+  border-top: 1px solid white;
+  width: 100%;
+  text-align: left;
+}
+
+
+#left-links a>i {
+  color: white !important;
+}
+
+
+#apod-container {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+
+#apod-container img {
+  height: auto;
+  max-width: 100%;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+}
+
+
+#apod-container p {
+  color: white;
+}
+
+#apod-container p span {
+  color: rgb(150, 140, 140);
+}
+
+#apod-container p span:hover {
+  cursor: pointer;
+}
+
+
+
+#apod-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+footer {
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: static;
+  bottom: 0px;
+  width: 100%;
+}
